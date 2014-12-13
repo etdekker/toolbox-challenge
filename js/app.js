@@ -13,7 +13,7 @@ var playing = false;
 var gameBoard = $('#game-board');
 gameBoard.attr = ('width', tileWidth * 4);
 
-$('#start').click(function() {
+//$('#start').click(function() {
 	for (var i = 0; i < 16; i++) {
 
 		var tile = 'img/tile' + (i + 1) + '.jpg';
@@ -34,7 +34,7 @@ $('#start').click(function() {
 		//add to the board
 		gameBoard.append(newTile);
 	};
-});
+//});
 
 $('#game-board img').click(function() {
 	//this refers to DOM element that raised the event
@@ -51,7 +51,7 @@ $('#game-board img').click(function() {
 	console.log(tileData2);
 
 });
-
+/*
 var array = ['a', 'b', 'c', 'd'];
 
 _.forEach(array, function(element, index) {
@@ -72,7 +72,7 @@ var shuffledArray = _.shuffle(numArray);
 console.log(shuffledArray);
 console.log(array);
 console.log(unionArray);
-
+*/
 /*
 var startTime = _.now();
 console.log(startTime);
